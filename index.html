@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Secure Group Chat</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div id="login-screen">
+      <h2>Select Your Profile</h2>
+      <div id="profile-list"></div>
+      <input type="password" id="password" placeholder="Enter password" />
+      <button onclick="login()">Login</button>
+    </div>
+
+    <div id="chat-screen" style="display:none;">
+      <h2 id="welcome"></h2>
+      <div id="chat-box"></div>
+      <form id="chat-form">
+        <input type="text" id="message" placeholder="Type your message" required />
+        <input type="file" id="screenshot" accept="image/*" />
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
